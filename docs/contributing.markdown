@@ -83,8 +83,13 @@ Use this form to tell us about your dataset. We will follow up with next steps.
 <div class="callout-box centered bold">
   <em>Contributions will be open soon!</em>
 </div>
-<form id="datasets-hubspot-form">
-	<div class="form-dataset disabled" inert>
+
+<!-- 
+<form action="#" method="post" id="dataset-contribution-form">
+  <div class="form-dataset disabled" inert> 
+-->
+<form id="dataset-contribution-form">
+  <div class="form-dataset">
 		<table class="form-dataset-table">
 			<tr>
 				<th class="form-dataset-table-label">
@@ -96,7 +101,7 @@ Use this form to tell us about your dataset. We will follow up with next steps.
 			</tr>
 			<tr>
 				<th class="form-dataset-table-label">
-				  <label for="dataset-location">Dataset&nbsp;location:</label>
+				  <label for="dataset-url">Dataset&nbsp;location:</label>
 				</th>
 				<td class="form-dataset-table-value">
 				  <input type="url" id="dataset-url" name="dataset-url" class="form-dataset-table-input" placeholder="https://example.com" pattern="https://.*" required />
@@ -104,7 +109,7 @@ Use this form to tell us about your dataset. We will follow up with next steps.
 			</tr>
 			<tr>
 				<th class="form-dataset-table-label">
-				  <label for="dataset-hosting">Hosting:</label>
+				  <label for="dataset-alliance-hosting">Hosting:</label>
 				</th>
 				<td class="form-dataset-table-value">
 				  <input type="checkbox" id="dataset-alliance-hosting" name="dataset-alliance-hosting" checked /> I want the AI Alliance to host this dataset.
@@ -112,7 +117,7 @@ Use this form to tell us about your dataset. We will follow up with next steps.
 			</tr>
 			<tr>
 				<th class="form-dataset-table-label">
-				  <label for="dataset">Dataset&nbsp;card:</label>
+				  <label for="dataset-card">Dataset&nbsp;card:</label>
 				</th>
 				<td class="form-dataset-table-value">
           <div class="form-dataset-table-file-input">
@@ -130,15 +135,15 @@ Use this form to tell us about your dataset. We will follow up with next steps.
             <label for="text">Text Only</label>
           </div>
           <div>
-            <input type="checkbox" id="dataset-modality-text" name="dataset-modality-text" class="form-dataset-table-checkbox" />
+            <input type="checkbox" id="dataset-modality-image" name="dataset-modality-image" class="form-dataset-table-checkbox" />
             <label for="images">Images</label>
           </div>
           <div>
-            <input type="checkbox" id="dataset-modality-text" name="dataset-modality-text" class="form-dataset-table-checkbox" />
+            <input type="checkbox" id="dataset-modality-audio" name="dataset-modality-audio" class="form-dataset-table-checkbox" />
             <label for="audio">Audio</label>
           </div>
           <div>
-            <input type="checkbox" id="dataset-modality-text" name="dataset-modality-text" class="form-dataset-table-checkbox" />
+            <input type="checkbox" id="dataset-modality-video" name="dataset-modality-video" class="form-dataset-table-checkbox" />
             <label for="video">Video (including audio)</label>
           </div>
 				</td>
@@ -173,10 +178,10 @@ Use this form to tell us about your dataset. We will follow up with next steps.
       </tr>
 			<tr>
 				<th class="form-dataset-table-label">
-				  <label for="email">Email:</label>
+				  <label for="dataset-email">Email:</label>
 				</th>
 				<td class="form-dataset-table-value">
-				  <input type="email" id="email" name="email" class="form-dataset-table-input" placeholder="Your email address" required />	  
+				  <input type="email" id="dataset-email" name="dataset-email" class="form-dataset-table-input" placeholder="Your email address" required />	  
 				</td>
 			</tr>
 			<tr>
@@ -184,7 +189,7 @@ Use this form to tell us about your dataset. We will follow up with next steps.
     			&nbsp;
     		</th>
 				<td class="form-dataset-table-value">
-				  <input type="checkbox" name="agree-to-terms" required /> I agree to the terms for contribution.
+				  <input type="checkbox" name="dataset-agree-to-terms" id="dataset-agree-to-terms" required /> I agree to the terms for contribution.
 				</td>
 			</tr>
 			<tr>
@@ -199,67 +204,89 @@ Use this form to tell us about your dataset. We will follow up with next steps.
   </div>
 </form>
 <script>
-	<!-- Necessary to have the file browser limit all the allowed sections to what "accept=''" specifies. -->
+  /* It's necessary to have the file browser limit all the allowed
+   * sections to what "accept=''" specifies. 
+   */
   var test = document.querySelector('input');
+  const form = document.getElementById('dataset-contribution-form');
+    form.addEventListener('submit', async (e) => {
+      e.preventDefault();
 
-const form = document.getElementById('datasets-hubspot-form');
-        form.addEventListener('submit', async (e) => {
-            e.preventDefault();
-
-            const formData = {
-                fields: [
-                    {
-                        name: 'dataset-name',
-                        value: document.getElementById('dataset-name').value
-                    },
-                    {
-                        name: 'dataset-url',
-                        value: document.getElementById('dataset-url').value
-                    },
-                    {
-                        name: 'datasert-alliance-hosting',
-                        value: document.getElementById('dataset-alliance-hosting').value
-                    },
-	            {
-                        name: 'dataset-card',
-                        value: document.getElementById('dataset-card').value
-                    },
-		    {
-                        name: 'dataset-domain',
-                        value: document.getElementById('dataset-domain').value
-                    },
-		    {
-                        name: 'email',
-                        value: document.getElementById('email').value
-                    },
-		    {
-      			name: 'agree-to-terms',
-	 		value: document.getElementById('agree-to-terms'),value
-    		    }
-                ],
-                context: {
-                    hutk: document.cookie.match(/hubspotutk=(.*?);/)[1] || ""  // HubSpot tracking cookie (optional)
-                }
-            };
-
-            try {
-              /* https://api.hsforms.com/submissions/v3/integration/submit/:portalId/:formGuid' */
-                const response = await fetch('localhost', {
-                    method: 'POST',
-                    headers: {
-                        'Content-Type': 'application/json'
-                    },
-                    body: JSON.stringify(formData)
-                });
-
-                if (response.ok) {
-                    alert('Form successfully submitted!');
-                } else {
-                    console.error('Form submission failed', response);
-                }
-            } catch (error) {
-                console.error('Error:', error);
-            }
+      const formData = {
+        fields: [
+          {
+            name: 'dataset-name',
+            value: document.getElementById('dataset-name').value
+          },
+          {
+            name: 'dataset-url',
+            value: document.getElementById('dataset-url').value
+          },
+          {
+            name: 'datasert-alliance-hosting',
+            value: document.getElementById('dataset-alliance-hosting').value
+          },
+          {
+            name: 'dataset-card',
+            value: document.getElementById('dataset-card').value
+          },
+          {
+            name: 'dataset-modality-text',
+            value: document.getElementById('dataset-modality-text').value
+          },
+          {
+            name: 'dataset-modality-image',
+            value: document.getElementById('dataset-modality-image').value
+          },
+          {
+            name: 'dataset-modality-audio',
+            value: document.getElementById('dataset-modality-audio').value
+          },
+          {
+            name: 'dataset-modality-video',
+            value: document.getElementById('dataset-modality-video').value
+          },
+          {
+            name: 'dataset-domain',
+            value: document.getElementById('dataset-domain').value
+          },
+          {
+            name: 'dataset-other-domain',
+            value: document.getElementById('dataset-other-domain').value
+          },
+          {
+            name: 'dataset-email',
+            value: document.getElementById('dataset-email').value
+          },
+          {
+            name: 'dataset-agree-to-terms',
+            value: document.getElementById('dataset-agree-to-terms'),value
+          }
+        ],
+        context: {
+          hutk: document.cookie.match(/hubspotutk=(.*?);/)[1] || ""  // HubSpot tracking cookie (optional)
+        }
+      };
+      console("form: "+JSON.stringify(formData));
+      try {
+        /* https://api.hsforms.com/submissions/v3/integration/submit/:portalId/:formGuid' */
+        const response = await fetch('localhost:8080/anything', {
+          method: 'GET',
+          headers: {
+              'Content-Type': 'application/json'
+          },
+          body: JSON.stringify(formData)
         });
-</script>
 
+        if (response.ok) {
+          alert('Form successfully submitted!', response);
+        } else {
+          alert('Form submission failed', response);
+          console.error('Form submission failed', response);
+        }
+      } catch (error) {
+        alert('Other Error:', error);
+        console.error('Other Error:', error);
+      }
+  });
+</script>
