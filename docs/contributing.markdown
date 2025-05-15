@@ -13,15 +13,48 @@ has_children: false
 _Contribution_ means adding your dataset to our catalog. You continue to own and host the dataset where you see fit.
 
 ## What Kinds of Datasets Do We Want?
+We seek a very broad range of datasets, including but not limited to the following.
 
-We seek a very broad range of datasets, including:
+#### Science and Industry
 
-* **Text:** especially under-served language.
-* **Multimedia:** audio, video, images.
-* **Time series:** targeting any domain or application.
-* **Science:** molecular discovery, drug discovery, geospatial, physics, etc., etc.
-* **Domains and use cases:** Industry-specific and use case-specific data.
-* **Synthetic:** datasets for all of the above can be synthetic or "real".
+* `Climate`: Supporting research in climate change, modeling vegetation and water cover, studying agriculture, etc.
+* `Marine`: Supporting research on and applications targeted towards marine environments.
+* `Materials`: Known chemical and mechanical properties of chemicals useful for research into potential new and improved materials. 
+* `Drug Discovery`: Known chemical and medicinal properties of chemicals useful for research into potential new and improved pharmaceuticals. 
+* `Semiconductors`: Specific area of materials research focused on improving the state of the art for semiconductor performance and manufacturing.
+* `Physics`: Data for physical systems.
+* `Software`: Software code bases and supporting datasets, e.g., vulnerability datasets, analyses of software-related failures, etc.
+
+Other science and industrial domains are welcome, too. 
+
+#### Vertical Domains
+
+* `Finance`: Historical market activity and behaviors. Connections to influences like climate, weather events, political events, etc. 
+* `Healthcare`: Everything from synthetic patient data for modeling outcomes, to public literature on known diseases and conditions, to diagnostics results and their analysis.
+* `Legal`: Jurisdiction-specific data about case law, etc.
+specific applications.
+* `Social Sciences`: Social dynamics, political activity and sentiments, etc.
+
+Across industries, there are general concerns required for success:
+
+* `Security`: Security vulnerabilities, incidents, etc. for software and other systems, including datasets for red teaming, penetration testing, and other security practices.
+* `Safety`: AI safety in all its forms, including suppression of hate speech, assistance with harmful activities, and hallucinations.
+
+#### Modalities
+
+In addition, we welcome datasets with different _modalities_. Hugging Face attempts to determine the modalities of datasets, but you can also use the `tags` to indicate modalities, such as the following:
+
+* `Text`: especially for under-served language.
+* `Image`: i.e., still images
+* `Audio`: 
+* `Video`: optional including audio
+* `Time series`: Data for training, tuning, and testing time series models, both general-purpose and for domain-specific applications.
+
+In addition, some industry specific datasets have their own custom formats.
+
+#### Synthetic Datasets
+
+For all of the above categories, synthetic data is important for filling gaps, especially in domains where open datasets are hard to find, such as patient data in healthcare.
 
 ## The Contribution Process
 
@@ -45,8 +78,8 @@ By contributing the dataset to the Initiative, you grant anyone a license to the
 
 Use this form to tell us about your dataset. It will open your email client with the data added and formatted. After we receive your email, we will follow up with next steps.
 
-<div class="callout-box centered bold">
-  <em>For questions, send us email at <a href="mailto:data@thealliance.ai?subject=I%20have%20questions%20about%20contributing%20an%20OTDI%20dataset">data@thealliance.ai</a>.</em>
+<div class="callout-box centered">
+  <strong>For questions, send us email at <a href="mailto:data@thealliance.ai?subject=I%20have%20questions%20about%20contributing%20an%20OTDI%20dataset">data@thealliance.ai</a>.</strong>
 </div>
 <form id="datasets-form">
     <!-- <div class="form-dataset disabled" inert> -->
