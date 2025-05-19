@@ -70,9 +70,9 @@ The process follows these steps:
 
 The Open Trusted Data Initiative is focused on obtaining datasets from submitters who either own them or have a unrestricted, free-to-use license from all owners of data included in the dataset. By contributing a dataset to the catalog, you affirm that with respect to the dataset and all of its data, you are either (1) the owner or (2) you have been granted a license by all owner(s) of the data enabling you to license it to others under an acceptable open license, which gives anyone the right to use, modify, copy, and create derivative works of the data and dataset, among other things. Do not contribute any data that was obtained merely by collecting publicly-visible data from the Internet or from other sources that you do not own or to which you do not have a suitable license.
 
-We prefer the [Community Data License Agreement - Permissive, Version 2.0](https://cdla.dev/permissive-2-0/){:target="cdla"} although [The Creative Commons License, Version 4.0 - CC BY 4.0](https://chooser-beta.creativecommons.org/){:target="cc-by-4"} is also sometimes used.
+We prefer the [Community Data License Agreement - Permissive, Version 2.0](https://cdla.dev/permissive-2-0/) although [The Creative Commons License, Version 4.0 - CC BY 4.0](https://chooser-beta.creativecommons.org/) is also sometimes used.
 
-By contributing the dataset to the Initiative, you grant anyone a license to the dataset and its data under the [Developer Certificate of Origin, Version 1.1](https://developercertificate.org/){:target="dco"} (see also our [community contributors page](https://github.com/The-AI-Alliance/community/blob/main/CONTRIBUTING.md){:target="community"}).  This does not affect your ownership, copyrights and other interests, and rights to and title to the dataset and its data.
+By contributing the dataset to the Initiative, you grant anyone a license to the dataset and its data under the [Developer Certificate of Origin, Version 1.1](https://developercertificate.org/) (see also our [community contributors page](https://github.com/The-AI-Alliance/community/blob/main/CONTRIBUTING.md)).  This does not affect your ownership, copyrights and other interests, and rights to and title to the dataset and its data.
 
 ## Contribute Your Dataset
 

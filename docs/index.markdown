@@ -47,7 +47,7 @@ Creating a catalog of trusted data involves several projects. **We welcome your 
 
 #### Define the Criteria for Open and Trustworthy Data
 
-Our definition of these [criteria]({{site.baseurl}}/dataset-requirements/) is evolving. Help us [refine them](https://github.com/orgs/The-AI-Alliance/projects/28/views/1?filterQuery=label%3A%22dataset+requirements%22){:target="github"}.
+Our definition of these [criteria]({{site.baseurl}}/dataset-requirements/) is evolving. Help us [refine them](https://github.com/orgs/The-AI-Alliance/projects/28/views/1?filterQuery=label%3A%22dataset+requirements%22).
 
 #### Find and Catalog Datasets for Diverse Topics
 
@@ -60,15 +60,15 @@ AI models and applications need datasets covering a broad [range of topics]({{si
 * **Specific domains and use cases:** Healthcare, legal, financial, education, chat bots, etc.
 * **Synthetic datasets:** For all of the above categories, synthetic datasets are needed, too.
 
-Add your datasets [to our catalog](https://github.com/orgs/The-AI-Alliance/projects/28/views/1?filterQuery=label%3A%22diverse+datasets%22){:target="github"}.
+Add your datasets [to our catalog](https://github.com/orgs/The-AI-Alliance/projects/28/views/1?filterQuery=label%3A%22diverse+datasets%22).
 
 #### Build Data Processing Pipelines
 
-[Data Pipelines]({{site.baseurl}}/our-processing/) are used to validate datasets proposed for inclusion in our catalog and to derive new datasets specialized for particular purposes. Are you a data processing expert? [We need your help](https://github.com/orgs/The-AI-Alliance/projects/28/views/1?filterQuery=label%3A%22data+pipelines%22){:target="github"}.
+[Data Pipelines]({{site.baseurl}}/our-processing/) are used to validate datasets proposed for inclusion in our catalog and to derive new datasets specialized for particular purposes. Are you a data processing expert? [We need your help](https://github.com/orgs/The-AI-Alliance/projects/28/views/1?filterQuery=label%3A%22data+pipelines%22).
 
 #### Build a Searchable Dataset Catalog
 
-Currently, the [Dataset Catalog]({{site.baseurl}}/catalog/catalog) is a static resource. Help us make it [browsable and searchable](https://github.com/orgs/The-AI-Alliance/projects/28/views/1?filterQuery=label%3A%22dataset+catalog%22){:target="github"}.
+Currently, the [Dataset Catalog]({{site.baseurl}}/catalog/catalog) is a static resource. Help us make it [browsable and searchable](https://github.com/orgs/The-AI-Alliance/projects/28/views/1?filterQuery=label%3A%22dataset+catalog%22).
 
 
 | See this short [presentation]({{site.baseurl}}/files/OTDI-Overview.pdf) (PDF) for more information about the Open Trusted Data Initiative. |

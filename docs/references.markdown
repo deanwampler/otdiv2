@@ -27,31 +27,31 @@ This section is organized by topic.
 <a name="data-transparency"></a>
 ### Hugging Face: Training Data Transparency in AI: Tools, Trends, and Policy Recommendations
 
-[Blog post](https://huggingface.co/blog/yjernite/data-transparency){:target="hf-data-transparency"} by [Yacine Jernite](https://huggingface.co/yjernite){:target="yacine"}.
+[Blog post](https://huggingface.co/blog/yjernite/data-transparency) by [Yacine Jernite](https://huggingface.co/yjernite).
 
 A call for &ldquo;minimum meaningful public transparency standards to support effective AI regulation.&rdquo;
 
 ### U.S. Department of Commerce
 
-[Generative Artificial Intelligence and Open Data: Guidelines and Best Practices](https://www.commerce.gov/news/blog/2025/01/generative-artificial-intelligence-and-open-data-guidelines-and-best-practices){:target="usdc-pdf"}) ([PDF](https://www.commerce.gov/sites/default/files/2025-01/GenerativeAI-Open-Data.pdf){:target="usdc-pdf"}). This guidance is intended to be used by the department and its bureaus, but it is generally useful. 
+[Generative Artificial Intelligence and Open Data: Guidelines and Best Practices](https://www.commerce.gov/news/blog/2025/01/generative-artificial-intelligence-and-open-data-guidelines-and-best-practices)) ([PDF](https://www.commerce.gov/sites/default/files/2025-01/GenerativeAI-Open-Data.pdf)). This guidance is intended to be used by the department and its bureaus, but it is generally useful. 
 
 Note that it was published January 16, 2025, just before the end of the Biden administration. It is not clear if these guidelines will be retained by the new administration.
 
 ### The European Union AI Act - Data Implications
 
-The [The European AI Office](https://digital-strategy.ec.europa.eu/en/policies/ai-office){:target="ai-office"} of the European Union has responsibility for implementing the [AI Act](https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai){:target="ai-act"}, which &ldquo;... is the first-ever legal framework on AI, which addresses the risks of AI and positions Europe to play a leading role globally.&rdquo;
+The [The European AI Office](https://digital-strategy.ec.europa.eu/en/policies/ai-office) of the European Union has responsibility for implementing the [AI Act](https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai), which &ldquo;... is the first-ever legal framework on AI, which addresses the risks of AI and positions Europe to play a leading role globally.&rdquo;
 
-[Open Future](https://openfuture.eu/){:target="open-future"}, in collaboration with the [Mozilla Foundation](https://foundation.mozilla.org/en/?gad_source=1){:target="mozilla"}, has authored a [white paper](https://openfuture.eu/publication/towards-robust-training-data-transparency/){:target="open-future-paper"} called _Suffiently Detailed? A proposal for implementing the AI Act’s training data transparency specification for GPAI_ (general-purpose AI). This paper discusses new specification for model developers to produce a _sufficiently detailed summary_ of the content used for model training. [The announcement](https://openfuture.eu/publication/towards-robust-training-data-transparency/){:target="open-future-paper"} says the following:
+[Open Future](https://openfuture.eu/), in collaboration with the [Mozilla Foundation](https://foundation.mozilla.org/en/?gad_source=1), has authored a [white paper](https://openfuture.eu/publication/towards-robust-training-data-transparency/) called _Suffiently Detailed? A proposal for implementing the AI Act’s training data transparency specification for GPAI_ (general-purpose AI). This paper discusses new specification for model developers to produce a _sufficiently detailed summary_ of the content used for model training. [The announcement](https://openfuture.eu/publication/towards-robust-training-data-transparency/) says the following:
 
 > The purpose of the paper we are sharing today is twofold. It clarifies the categories of rights and legitimate interests that justify access to information about training data. In addition to copyright, these include, among others, privacy and personal data protection, scientific freedom, the prohibition of discrimination, and respect for cultural and linguistic diversity. Moreover, it provides a blueprint for the forthcoming template for the &ldquo;sufficiently detailed summary,&rdquo; which is intended to serve these interests while respecting the rights of all parties concerned.
 
 ## FAIR Principles
 
-[Website](https://www.go-fair.org/fair-principles/){:target="fair"}
+[Website](https://www.go-fair.org/fair-principles/)
 
 Quoting from the website:
 
-> In 2016, the [FAIR Guiding Principles for scientific data management and stewardship](https://www.nature.com/articles/sdata201618){:target="fair2"} were published in _Scientific Data_. The authors intended to provide guidelines to improve the Findability, Accessibility, Interoperability, and Reuse of digital assets. The principles emphasize machine-actionability (i.e., the capacity of computational systems to find, access, interoperate, and reuse data with none or minimal human intervention) because humans increasingly rely on computational support to deal with data as a result of the increase in volume, complexity, and creation speed of data.
+> In 2016, the [FAIR Guiding Principles for scientific data management and stewardship](https://www.nature.com/articles/sdata201618) were published in _Scientific Data_. The authors intended to provide guidelines to improve the Findability, Accessibility, Interoperability, and Reuse of digital assets. The principles emphasize machine-actionability (i.e., the capacity of computational systems to find, access, interoperate, and reuse data with none or minimal human intervention) because humans increasingly rely on computational support to deal with data as a result of the increase in volume, complexity, and creation speed of data.
 
 Both data and metadata must be ***findable*** to be usable, such as storage in known locations. Machine readability is essential for practical use.
 
@@ -68,7 +68,7 @@ Finally, they define three **types of entities**: "data (or any digital object),
 
 ### A Large-scale Audit of Dataset Licensing and Attribution in AI
 
-[A large-scale audit of dataset licensing and attribution in AI](https://www.nature.com/articles/s42256-024-00878-8){:target="nature"} is a Nature paper from MIT researchers and others. From a corresponding [MIT News article](https://news.mit.edu/2024/study-large-language-models-datasets-lack-transparency-0830){:target="mit"}, the paper describes their "... systematic audit of more than 1,800 text datasets on popular hosting sites. They found that more than 70 percent of these datasets omitted some licensing information, while about 50 percent had information that contained errors.
+[A large-scale audit of dataset licensing and attribution in AI](https://www.nature.com/articles/s42256-024-00878-8) is a Nature paper from MIT researchers and others. From a corresponding [MIT News article](https://news.mit.edu/2024/study-large-language-models-datasets-lack-transparency-0830), the paper describes their "... systematic audit of more than 1,800 text datasets on popular hosting sites. They found that more than 70 percent of these datasets omitted some licensing information, while about 50 percent had information that contained errors.
 
 "Building off these insights, they developed a user-friendly tool called the Data Provenance Explorer that automatically generates easy-to-read summaries of a dataset’s creators, sources, licenses, and allowable uses."
 
@@ -76,7 +76,7 @@ Finally, they define three **types of entities**: "data (or any digital object),
 
 ### Data Provenance Initiative
 
-[Website](https://www.dataprovenance.org/){:target="dp-site"}, [GitHub](https://github.com/Data-Provenance-Initiative/Data-Provenance-Collection){:target="dp-repo"}
+[Website](https://www.dataprovenance.org/), [GitHub](https://github.com/Data-Provenance-Initiative/Data-Provenance-Collection)
 
 There mission is to uncover the datasets used to train large language models. From their website:
 
@@ -84,7 +84,7 @@ There mission is to uncover the datasets used to train large language models. Fr
 
 ### Data and Trust Alliance - Data Provenance Standards
 
-The [Data and Trust Alliance](https://dataandtrustalliance.org/){:target="dta"} has defined a standard for [provenance](https://dataandtrustalliance.org/work/data-provenance-standards){:target="dta-prov"}, as well as other projects.
+The [Data and Trust Alliance](https://dataandtrustalliance.org/) has defined a standard for [provenance](https://dataandtrustalliance.org/work/data-provenance-standards), as well as other projects.
 
 Here is their statement about the purpose of this standard, quoted from the project web page:
 
@@ -98,17 +98,17 @@ Here is their statement about the purpose of this standard, quoted from the proj
 
 ### Interactive Advertising Bureau Taxonomy
 
-[Interactive Advertising Bureau](http://www.iabtechlab.com/){:target="iab"} ([GitHub](https://github.com/InteractiveAdvertisingBureau){:target="iab-gh"}) has defined a [taxonomy](https://iabtechlab.com/standards/content-taxonomy/){:target="iab-tax"} ([GitHub](https://github.com/InteractiveAdvertisingBureau/Taxonomies){:target="iab-tax-gh"}) of _content_, _audience_, and _ad products_ ([latest - V3.1](https://github.com/InteractiveAdvertisingBureau/Taxonomies/blob/develop/Content%20Taxonomies/Content%20Taxonomy%203.1.tsv){:target="iab-tax-31"}).
+[Interactive Advertising Bureau](http://www.iabtechlab.com/) ([GitHub](https://github.com/InteractiveAdvertisingBureau)) has defined a [taxonomy](https://iabtechlab.com/standards/content-taxonomy/) ([GitHub](https://github.com/InteractiveAdvertisingBureau/Taxonomies)) of _content_, _audience_, and _ad products_ ([latest - V3.1](https://github.com/InteractiveAdvertisingBureau/Taxonomies/blob/develop/Content%20Taxonomies/Content%20Taxonomy%203.1.tsv)).
 
 ### IBM watsonx Natural Language Processing Categories
 
-IBM's [watsonx](https://www.ibm.com/docs/en/watsonx/saas){:target="watson-nlp"}  Natural Language Processing (NLP) system works with a defined taxonomy of [categories](https://www.ibm.com/docs/en/watsonx/saas?topic=categorization-category-types){:target="watson-nlp-categories"}.
+IBM's [watsonx](https://www.ibm.com/docs/en/watsonx/saas)  Natural Language Processing (NLP) system works with a defined taxonomy of [categories](https://www.ibm.com/docs/en/watsonx/saas?topic=categorization-category-types).
 
 ## Searching for Datasets
 
 ### University of California Berkeley
 
-[It Took Longer than I was Expecting: Why is Dataset Search Still so Hard?](https://dl.acm.org/doi/10.1145/3665939.3665959){:target="hard"} analyzes why searching for datasets is harder than it might seem.
+[It Took Longer than I was Expecting: Why is Dataset Search Still so Hard?](https://dl.acm.org/doi/10.1145/3665939.3665959) analyzes why searching for datasets is harder than it might seem.
 
 <a name="ai-bom"></a>
 ## Bill of Materials
@@ -119,7 +119,7 @@ A _bill of materials_ is a traditional concept used to specify for producers and
 
 Software BoMs have the same goals, to very clearly state what components a software artifact contains.
 
-[This Linux Foundation report](https://www.linuxfoundation.org/research/ai-bom){:target="ai-bom"} discusses the concept in the content of AI. A quote from the website:
+[This Linux Foundation report](https://www.linuxfoundation.org/research/ai-bom) discusses the concept in the content of AI. A quote from the website:
 
 > A Software Bill of Materials (SBOM) is becoming an increasingly important tool in regulatory and technical spaces to introduce more transparency and security into a project's software supply chain.
 > 

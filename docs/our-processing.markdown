@@ -27,7 +27,7 @@ has_children: false
 
 Given the importance of provenance and governance for the datasets in this initiative, we plan to analyze proposed datasets to ensure they meet our [dataset specification]({{site.baseurl}}/dataset-requirements). _Derived_ datasets that do various forms of filtering are also planned, as discussed below.
 
-We will publish the technical details of these processes as they are developed. We will open source all source code and deployment information for these pipelines under the AI Alliance standard code license: [_Apache 2.0_](https://spdx.org/licenses/Apache-2.0){:target="apache"}. (See the Alliance [`community/CONTRIBUTING` page](https://github.com/The-AI-Alliance/community/blob/main/CONTRIBUTING.md#licenses){:target="licenses"} for more details about our license conventions.)
+We will publish the technical details of these processes as they are developed. We will open source all source code and deployment information for these pipelines under the AI Alliance standard code license: [_Apache 2.0_](https://spdx.org/licenses/Apache-2.0). (See the Alliance [`community/CONTRIBUTING` page](https://github.com/The-AI-Alliance/community/blob/main/CONTRIBUTING.md#licenses) for more details about our license conventions.)
 
 ## Data Quality and &ldquo;Cleanliness&rdquo;
 
